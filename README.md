@@ -36,4 +36,4 @@ Early stopping and model checkpoints were used for efficient training. The model
 
 The training and validation losses were then plotted and visualized. A confusion matrix was also displayed. These can be found in the results folder in the main GitHub repository.
 
-The confusion matrix coincides with the Model_Loss_12.png, while Model_Loss.png does not have one due to Google Colab limiting the amount of time to use a GPU.
+The confusion matrix coincides with the Model_Loss_12.png, while Model_Loss.png does not have one due to Google Colab limiting the amount of time to use a GPU. The Model_Loss_12.png being 12 epochs, a batch size of 32, and a dataset of about 300, while the Model_Loss.png had 10 epochs, a batch size of 16, and a dataset of about 900. Wanting to get at least 10 epochs, Google Colab would always disconnect the runtime before being able to visualize the confusion matrix. An example can be seen in the bottom of the TransferLearning_Model.ipynb file.
