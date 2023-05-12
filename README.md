@@ -26,3 +26,9 @@ At the end of the script a function was used to generate and save images. Despit
 # Methodology Learning Transfer Model
 The dataset was uploaded to Google Drive to run the script on Google Colab, as for some unexpected reason the results, i.e. the confusion matrix and loss accuracy graph, were having issues with use of multiple versions of CUDA, cuDNN, and Python. Multiple instalations were attempted but did not succeed so Google Colab had to be used instead to run the process.
 
+With that said, libraries and directories were established in the beginning.
+
+An image data generator was used for training data as well as another one for testing data. Both rescales the images while the image data generator for the training data applies data augmentation as well, which include shear, zoom, rotation, width shift, height shift, and horizontal flips. They were then displayed to visually represent the augments as well as the labels.
+
+The model was the constructed with multiple Conv2D and MaxPooling2D layers for feature extraction, followed by Flatten and Dense layers for classification. A dropout layer was used to prevent overfitting as well. The model was compiled with an Adam optimizer, binary cross-entropy loss, and accuracy as the metric.
+
