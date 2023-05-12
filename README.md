@@ -35,3 +35,5 @@ The model was the constructed with multiple Conv2D and MaxPooling2D layers for f
 Early stopping and model checkpoints were used for efficient training. The model was fitted on training data for a specified number of epochs, using validation data, and the callbacks.
 
 The training and validation losses were then plotted and visualized. A confusion matrix was also displayed. These can be found in the results folder in the main GitHub repository.
+
+The confusion matrix coincides with the Model_Loss_12.png, while Model_Loss.png does not have one due to Google Colab limiting the amount of time to use a GPU.
