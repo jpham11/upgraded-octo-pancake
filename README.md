@@ -11,3 +11,16 @@ The images in the dataset were converted from a .tiff to .png then labeled and p
 
 After importing necessary libraries, defining paths to the data directories, and defining training parameters, such as epochs, batch size, image size, latent dimension, and gradient penalty weight, a function to load images from the directory was defined.
 
+The generator and discriminator were then defined using the Keras Sequential API. They both contained convolutional layers followed by a batch normalization and ReLU (generator)/LeakyReLU (discriminator) activation.
+
+Loss functions were then defined for the generator and discriminator, with the generator loss being the binary cross-entropy between the discriminator's predictions on the generated images, while the discriminator being the average of the binary cross-entropy for both real and fake images.
+A function was also used for calculating the gradient penalty for better stabilizing the GAN.
+
+A training loop was then defined using a function for the training step of one batch of images, which included generating fake images, calculating the loss for both the generator and discriminator, calculating the graidents, and applying the gradients to update the model's parameters.
+A function was then used to save the generated images at each 5 epochs.
+
+The DCGAN was then trained by initializing the generator and discriminator models as well as the optimizers, utilizing the dataset from earlier.
+
+At the end of the script a function was used to generate and save images. Despite adding many things, such as a gradient penalty and extra convolutional layers, the images that came out of the DCGAN did not amount to what was expected of it. So using only the dataset from earlier was attempted to train the transfer learning model.
+
+# Methodology Learning Transfer Model
