@@ -5,7 +5,7 @@ Transfer Learning model to distinguish between sickle cell and normal blood cell
 This project attempts to utilize a transfer learning model using VGG16 to distinguish between whether an image contains regular blood cells or sickle cells within. A DCGAN model was also used to attempt adding more images to the dataset.
 
 # Methodology DCGAN
-First, the dataset was downloaded so as to be used by the DCGAN model. After uploading that folder of .tiff images to Google Drive, Google Colab was used to write the script for the DCGAN.
+First, the dataset was downloaded so as to be used by the DCGAN model. Though this script was written in Google Colab, it was executed in a local python environment and ran on a CPU due to the GPU not showing up despite being part of the aquired hardware.
 
 The images in the dataset were converted from a .tiff to .png then labeled and placed into subfolders. There were about 900 images.
 
@@ -24,3 +24,5 @@ The DCGAN was then trained by initializing the generator and discriminator model
 At the end of the script a function was used to generate and save images. Despite adding many things, such as a gradient penalty and extra convolutional layers, the images that came out of the DCGAN did not amount to what was expected of it. So using only the dataset from earlier was attempted to train the transfer learning model.
 
 # Methodology Learning Transfer Model
+The dataset was uploaded to Google Drive to run the script on Google Colab, as for some unexpected reason the results, i.e. the confusion matrix and loss accuracy graph, were having issues with use of multiple versions of CUDA, cuDNN, and Python. Multiple instalations were attempted but did not succeed so Google Colab had to be used instead to run the process.
+
