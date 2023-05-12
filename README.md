@@ -34,4 +34,4 @@ The model was the constructed with multiple Conv2D and MaxPooling2D layers for f
 
 Early stopping and model checkpoints were used for efficient training. The model was fitted on training data for a specified number of epochs, using validation data, and the callbacks.
 
-The training and validation losses were then plotted and visualized. A confusion matrix was also displayed.
+The training and validation losses were then plotted and visualized. A confusion matrix was also displayed. These can be found in the report document in the finalProject.doc file.
