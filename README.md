@@ -32,3 +32,6 @@ An image data generator was used for training data as well as another one for te
 
 The model was the constructed with multiple Conv2D and MaxPooling2D layers for feature extraction, followed by Flatten and Dense layers for classification. A dropout layer was used to prevent overfitting as well. The model was compiled with an Adam optimizer, binary cross-entropy loss, and accuracy as the metric.
 
+Early stopping and model checkpoints were used for efficient training. The model was fitted on training data for a specified number of epochs, using validation data, and the callbacks.
+
+The training and validation losses were then plotted and visualized. A confusion matrix was also displayed.
